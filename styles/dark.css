@@ -1,4 +1,4 @@
-.page.theme_dark {
+.theme_dark {
     --accent-color: #ff0070;
     --title-bg-color: #ff0070;
     --link-color: #ff0070;
@@ -12,10 +12,6 @@
     background-color: var(--bg-color);
     background-image: url(../images/cover-image-dark.png);
   }
-  
-    .header__rec {
-      display: block;
-    }
   
     .content__title {
       color: var(--accent-color);

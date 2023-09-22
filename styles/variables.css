@@ -5,8 +5,8 @@
   --text-color: #f1b2ce;
   --bg-color: #000028;
   --title-color: #000028;
-  --text-shadow: 4px 4px 0 #ff0070;
-  --footer-text-shadow: 2px 2px 0 #ff0070;
+  --text-shadow: 4px 4px 0px #ff0070;
+  --footer-text-shadow: 2px 2px 0px #ff0070;
   --main-title-color: #db00ff;
   --menu-button-hover: 1px solid rgba(255, 0, 112, 0.4);
   --main-title-font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);

@@ -1,4 +1,4 @@
-.page.theme_light {
+  .theme_light {
     --accent-color: #353430;
     --bg-color: #fff1f7;
     --text-color: #353430;
@@ -11,12 +11,8 @@
     --footer-text-shadow: 2px 2px 0 #ff0070;
     color: #353430;
     background-image: url(../images/cover-image-light.png);
-}
-
-  .header__rec {
-      display: none;
-    }
-  
+ }
+ 
   .content__title {
       color: inherit;
     }
