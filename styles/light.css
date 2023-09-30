@@ -5,6 +5,7 @@
     --title-color: #353430;
     --title-bg-color: #ff8dcb;
     --link-color: #ff8dcb;
+    --font-family: "IBM Plex mono";
     --menu-button-hover: 1px solid rgba(50, 49, 45, 0.4);
     --main-title-color: #ffc2e6;
     --text-shadow: 4px 4px 0 #ff0070;
@@ -16,11 +17,10 @@
   .page.theme_light .header__rec {
     display: none;
   }
+  .page.theme_light .header__text {
+    color: var(--accent-color);
+  }
  
-  .content__title {
-      color: inherit;
-    }
-  
   @media (prefers-color-scheme: light) {
     :root {
       --accent-color: #353430;
@@ -37,7 +37,6 @@
     }
   
     .page {
-      color: #353430;
       background-image: url(../images/cover-image-light.png);
     }
   }

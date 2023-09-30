@@ -10,7 +10,11 @@
   --main-title-color: #db00ff;
   --menu-button-hover: 1px solid rgba(255, 0, 112, 0.4);
   --main-title-font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
-  --font-family: "IBM Plex mono";
+  --font-family: "IBM Plex mono", monospace;
+  --font-size: 18px;
+  --font-style: normal;
+  --font-weight: 700;
+  --line-height: 23.4px;
   --padding-inline: 20px;
   --padding-block: 20px;
   --margin-top-small: 60px;

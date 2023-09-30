@@ -5,6 +5,7 @@
     --text-color: #f1b2ce;
     --bg-color: #000028;
     --title-color: #000028;
+    --font-family: "IBM Plex mono";
     --text-shadow: 4px 4px 0 #ff0070;
     --footer-text-shadow: 2px 2px 0 #ff0070;
     --main-title-color: #db00ff;
@@ -12,7 +13,7 @@
     background-color: var(--bg-color);
     background-image: url(../images/cover-image-dark.png);
   }
-  
-    .content__title {
-      color: var(--accent-color);
-    }
+
+  .page.theme_dark .header__rec {
+    display: block;
+  }
