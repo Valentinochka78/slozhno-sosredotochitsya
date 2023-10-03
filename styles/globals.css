@@ -6,7 +6,7 @@
 
 body {
   min-inline-size: 375px;
-  max-inline-size: 1440px;
+  max-inline-size: 1024px;
   margin: 0 auto;
   font-family: "IBM Plex Mono", monospace;
   background-color: #000028;
@@ -39,8 +39,4 @@ a {
   font-family: inherit;
   font-size: inherit;
   line-height: inherit;
-}
-
-article {
-  display: grid;
 }
