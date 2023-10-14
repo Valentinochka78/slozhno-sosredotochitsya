@@ -136,13 +136,16 @@
 
 .content-section {
   padding-inline: var(--padding-inline);
+  display: grid;
 }
 
 .content__title {
   color: var(--accent-color);
+  font-family: var(--font-family);
   font-weight: var(--font-weight);
   line-height: var(--line-height);
   font-size: var(--font-size);
+  font-style: var(--font-style);
 }
 
 .title-decor {
@@ -151,7 +154,7 @@
   font-family: var(--font-family);
   font-size: var(--font-size);
   font-style: var(--font-style);
-  font-weight: 400;
+  font-weight: var(--accent-font-weight);
   line-height: var(--line-height);
 }
 
@@ -163,6 +166,7 @@
   font-style: var(--font-style);
   font-weight: var(--accent-font-weight);
   line-height: var(--line-height);
+  list-style: none;
 }
 
 .why {
@@ -195,13 +199,26 @@
 
 .what {
   margin-block-start: var(--margin-top-big);
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 20px;
 }
 
-.content__title .what {
-  grid-column: 1 / 4;
+.what .content__title {
+  margin-bottom: 20px;
+  width: 315px;
+}
+
+.section {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.card-decor {
+  flex: 1 1 315px;
+}
+
+.paragraph:not(:last-child) {
+  padding-block-end: 20px;
+  flex: 1;
 }
 
 .how {
@@ -220,11 +237,6 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: var(--gallery-gap);
-}
-
-.gallery__title {
-  align-self: start;
-  grid-column: 1 / 4;
 }
 
 .gallery__picture {
@@ -303,12 +315,16 @@
     grid-column: 2 / 3;
   }
 
-  .what {
-    grid-template-columns: 1fr 2fr;
+  .what .content__title {
+    width: 236px;
   }
 
-  .what .card {
-    grid-column: 1 / 4;
+  .section {
+    flex-direction: column;
+  }
+
+  .card-decor {
+    flex: 1 1 174px;
   }
 
   .how {
@@ -373,12 +389,13 @@
     grid-column: 1 / 2;
   }
 
-  .what {
-    grid-template-columns: 1fr;
+  .section {
+    display: flex;
+    flex-direction: column;
   }
 
-  .what .card {
-    grid-column: 1 / 2;
+  .what .content__title {
+    width: 355px;
   }
 
   .how {
@@ -391,10 +408,6 @@
 
   .gallery {
     grid-template-columns: 1fr;
-  }
-
-  .gallery__title {
-    grid-column: 1 / 2;
   }
 
   .gallery .gallery__card:nth-child(2) {

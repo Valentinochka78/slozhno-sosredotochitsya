@@ -20,7 +20,7 @@
   .page.theme_light .header__text {
     color: var(--accent-color);
   }
-  .page.theme__auto .header__rec {
+  .page.theme_auto .header__rec {
     display: block;
   }
  
